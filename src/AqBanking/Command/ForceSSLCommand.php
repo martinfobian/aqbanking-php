@@ -23,8 +23,6 @@ class ForceSSLCommand extends AbstractCommand
             . ' --user=' . escapeshellcmd($user->getUserId())
         ;
 
-        echo $shellCommand . PHP_EOL;
-
         $result = $this->getShellCommandExecutor()->execute($shellCommand);
 
 
